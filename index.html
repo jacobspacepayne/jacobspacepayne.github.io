@@ -39,13 +39,23 @@
   a:hover {
     text-decoration: underline; /* Add underline on hover */
   }
+
+  /* Style for the image */
+  .profile-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    margin-bottom: 15px; /* Add some space below the image */
+    border-radius: 4px; /* Slightly rounded corners for the image */
+  }
 </style>
 </head>
 <body>
 
 <div class="container">
   <h1>Hi, I'm Jacob. 👋</h1>
-  <p>I am a fourth year PhD student at the University of Iowa studying ⚛️ pulsars and optics for x-ray 🔭 telescopes.</p>
+  <img src="_MG_5732 copiar.jpg" alt="Jacob's profile picture" class="profile-image">
+  <hr> <p>I am a fourth year PhD student at the University of Iowa studying ⚛️ pulsars and optics for x-ray 🔭 telescopes.</p>
   <p>My work has two main branches: pulsar emission analysis using measurements taken by the <a href="https://science.nasa.gov/mission/nicer/">NICER</a> telescope on the International Space Station, and glass forming to produce smooth substrates for multilayer coatings that are reflective to X-ray photons. I am interested in using pulsars as references for autonomous interplanetary navigation.</p>
   <p><i>You can read more about this project here:<br>
   <a href="https://repository.gatech.edu/entities/publication/63435d46-d94e-4a9a-b8d0-7056988c3c73">X-ray Pulsar Navigation Instrument Performance and Scale Analysis</a></i></p>
