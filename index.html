@@ -2,83 +2,121 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Jacob's Page</title>
+<title>Jacob Payne | Research</title>
 <style>
   body {
     display: flex;
-    flex-direction: column; /* This stacks containers vertically */
-    align-items: center;    /* Centers them horizontally */
-    gap: 20px;             /* Adds space between the two containers */
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     min-height: 100vh;
     margin: 0;
-    padding: 40px 0;       /* Added padding so top/bottom isn't cramped */
-    background-color: #f0f0f0;
+    padding: 50px 0;
+    background-color: #f4f4f7;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
   }
 
   .container {
-    width: 66%;
-    max-width: 800px;
-    min-width: 300px;
-    padding: 20px;
+    width: 90%;
+    max-width: 850px;
+    padding: 40px;
     box-sizing: border-box;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333;
-    font-family: Arial, sans-serif;
+    border-radius: 2px; /* Sharper edges for a professional CV look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    color: #2c3e50;
   }
 
   h1 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
     margin-top: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
-  /* Make links appear as a list or separated in the second container */
-  .container a {
-    display: inline-block;
-    margin-right: 15px;
-    color: #0066cc; /* Standard link blue is usually better for UX */
+  /* Thumbnail Style */
+  .apod-thumbnail {
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 4px;
+    transition: transform 0.2s;
+  }
+
+  .apod-thumbnail:hover {
+    transform: scale(1.05);
+  }
+
+  .publication-list {
+    margin-top: 20px;
+  }
+
+  .publication-item {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    text-indent: -20px;
+  }
+
+  a {
+    color: #2980b9;
     text-decoration: none;
   }
 
-  .container a:hover {
+  a:hover {
     text-decoration: underline;
   }
 
-  .profile-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
-    border-radius: 4px;
-  }
+  .clear { clear: both; }
 </style>
 </head>
 <body>
 
 <div class="container">
-  <h1>A webpage by Jacob Payne</h1>
-  <img src="_MG_5732 copiar.jpg" alt="Jacob's profile picture" class="profile-image">
-  <hr> 
-  <p>I am a fourth year PhD student at the University of Iowa studying ⚛️ pulsars and optics for x-ray 🔭 telescopes.</p>
-  <p>My work has two main branches: pulsar emission analysis using measurements taken by the <a href="https://science.nasa.gov/mission/nicer/">NICER</a> telescope on the International Space Station, and glass forming to produce smooth substrates for multilayer coatings that are reflective to X-ray photons.</p>
-  <p><i>You can read more about this project here:<br>
-  <a href="https://repository.gatech.edu/entities/publication/63435d46-d94e-4a9a-b8d0-7056988c3c73">X-ray Pulsar Navigation Instrument Performance and Scale Analysis</a></i></p>
-  <p><i>And get the scripts I'm using here:</i><br>
-  <a href="https://github.com/jacobspacepayne/nicer-observation">NICER Data Analysis Scripts</a></p>
-  <p>When I'm not in the lab, I ride bikes, sit mindlessly, care for my cat Feadog, and play bagpipes with the Turlach Ur Pipe Band in Grinnell, Iowa.<br>
-  🚲 🌱 ✨ 🐈‍⬛ 🎵</p>
+  <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
+    <img src="https://apod.nasa.gov/apod/calendar/S_240508.jpg" alt="APOD Thumbnail" class="apod-thumbnail">
+  </a>
+  
+  <h1>Jacob Payne</h1>
+  <p><strong>PhD Candidate, Physics and Astronomy</strong><br>
+  University of Iowa | Iowa City, IA</p>
+
+  <p>My research focuses on the intersection of High-Energy Astrophysics and X-ray Instrumentation. I investigate the emission characteristics of pulsars utilizing data from the <strong>Neutron star Interior Composition Explorer (NICER)</strong> mission aboard the International Space Station, aiming to refine our understanding of pulsar timing and geometry.</p>
+
+  <p>Parallel to my observational work, I contribute to the development of next-generation X-ray optics. This involves experimental glass forming and substrate fabrication to create mirror substrates for multilayer coatings, a critical component for increasing the effective area and sensitivity of future X-ray telescope missions.</p>
+
+  <div class="clear"></div>
+  <hr>
+
+  <h3>Selected Publications & Theses</h3>
+  <div class="publication-list">
+    <div class="publication-item">
+      Payne, J. (2024). <i>Designing compact X-ray optics for Pulsar-Informed Autonomous Navigation</i>. [Master's Thesis, University of Iowa]. 
+      <a href="https://iro.uiowa.edu/esploro/outputs/graduate/Designing-compact-X-ray-optics-for-Pulsar-Informed/9985134847002771">Link to Repository</a>
+    </div>
+    <div class="publication-item">
+      Payne, J. <i>X-ray Pulsar Navigation Instrument Performance and Scale Analysis</i>. 
+      <a href="https://repository.gatech.edu/entities/publication/63435d46-d94e-4a9a-b8d0-7056988c3c73">Link to Publication</a>
+    </div>
+  </div>
+
+  <p><strong>Technical Resources:</strong><br>
+  <a href="https://github.com/jacobspacepayne/nicer-observation">GitHub: NICER Data Analysis Scripts</a></p>
 </div>
 
 <div class="container">
   <h1>Pulsar Toolkit</h1>
-  <p>Websites with frequent utility:</p>
-  <ul style="list-style: none; padding: 0;">
-    <li><a href="https://heasarc.gsfc.nasa.gov/xamin/index.jsp">XAMIN Search</a></li>
-    <li><a href="https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/xTime/xTime.pl">xTime</a></li>
-    <li><a href="https://www.atnf.csiro.au/research/pulsar/psrcat/">ATNF Pulsar Catalog</a></li>
-    <li><a href="https://gitlab.com/IPTA/DR2/-/tree/master/pulsars">Intl Pulsar Timing Array</a></li>
+  <p>Reference catalogs and temporal conversion tools for high-energy astrophysics:</p>
+  <ul style="list-style-type: square;">
+    <li><a href="https://heasarc.gsfc.nasa.gov/xamin/index.jsp">XAMIN Search</a> - HEASARC data interface</li>
+    <li><a href="https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/xTime/xTime.pl">xTime</a> - Time system conversion tool</li>
+    <li><a href="https://www.atnf.csiro.au/research/pulsar/psrcat/">ATNF Pulsar Catalog</a> - Comprehensive pulsar database</li>
+    <li><a href="https://gitlab.com/IPTA/DR2/-/tree/master/pulsars">IPTA DR2</a> - International Pulsar Timing Array parameters</li>
   </ul>
 </div>
 
